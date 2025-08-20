@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festa dos Psicopatas da Manhã</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Festa dos Psicopatas da Manhã – Smartfit Maricá</h1>
+    <div class="banner">
+      <p><strong>📅 Data:</strong> 21 de setembro de 2025</p>
+      <p><strong>📍 Local:</strong> Rua Pref. Hilário da Costa e Silva, Lote 14, Qd M – Pq. Eldorado</p>
+      <p><strong>💸 Valor por pessoa:</strong> R$50,00</p>
+    </div>
+  </header>
+
+  <section class="confirmacao">
+    <h2>Confirme sua presença</h2>
+    <button onclick="mostrarFormulario()">✅ Confirmar Presença</button>
+    <button onclick="deixaPraProxima()">🚫 Deixa pra próxima!</button>
+
+    <div id="formulario" style="display:none;">
+      <input type="text" id="nome" placeholder="Seu nome" />
+      <input type="number" id="acompanhantes" placeholder="Quantos acompanhantes?" min="0" />
+      <button onclick="confirmarPresenca()">Enviar</button>
+    </div>
+  </section>
+
+  <section class="contador">
+    <h2>🎉 Confirmados</h2>
+    <p>Total de pessoas: <span id="total">0</span></p>
+  </section>
+
+  <section class="galeria">
+    <h2>🔥 Prévia do que te espera</h2>
+    <div class="imagens">
+      <img src="https://source.unsplash.com/400x300/?gym" alt="Treino na academia" />
+      <img src="https://source.unsplash.com/400x300/?barbecue,party" alt="Churrasco e festa" />
+      <img src="https://source.unsplash.com/400x300/?soccer" alt="Golzinho" />
+      <img src="https://source.unsplash.com/400x300/?pool-table" alt="Sinuca" />
+      <img src="https://source.unsplash.com/400x300/?beach,sports" alt="Altinha e frescobol" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Organizado por Smartfit Maricá – Psicopatas da Manhã 💪</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
